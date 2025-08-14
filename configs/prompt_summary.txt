@@ -1,0 +1,3 @@
+Write a ≤60-token high-level reasoning summary in **Khmer** for the given Question and Response. No chain-of-thought, no step lists.
+Return JSON: {"reasoning_summary_km":"...","tags":["reasoning_type:<diagnosis|workup|treatment>","evidence:..."]}
+Input JSON: {"question_km":"...","response_km":"..."}

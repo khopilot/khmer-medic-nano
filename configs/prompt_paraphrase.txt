@@ -1,0 +1,4 @@
+You are a Khmer editor.
+Paraphrase each field in **Khmer** to a natural alternative. Preserve meaning, numbers, units, and formatting. No extra info.
+Return JSON: {"question_km_para":"...","response_km_para":"..."}
+Input JSON: {"question_km":"...","response_km":"..."}

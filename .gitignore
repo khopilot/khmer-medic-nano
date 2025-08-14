@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+venv_finetune/
+ENV/
+
+# Dataset files (too large)
+data/out/*.jsonl
+data/training_formats/*.jsonl
+data/training_formats/*.txt
+archive_backup/
+
+# Model files
+models/
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+
+# Logs
+*.log
+wandb/
+logs/
+checkpoints/
+
+# Environment
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Large files
+*.parquet
+*.arrow
+*.h5
+*.pkl
+*.pickle
+
+# Keep only essential data
+!data/training_formats/training_config.json
+!data/training_formats/README.md

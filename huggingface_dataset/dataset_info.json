@@ -1,0 +1,42 @@
+{
+  "dataset_name": "khmer-medical-qa",
+  "dataset_size": 18756,
+  "features": {
+    "index": {
+      "dtype": "int64"
+    },
+    "question_en": {
+      "dtype": "string"
+    },
+    "response_en": {
+      "dtype": "string"
+    },
+    "question_km": {
+      "dtype": "string"
+    },
+    "response_km": {
+      "dtype": "string"
+    },
+    "question_km_para": {
+      "dtype": "string"
+    },
+    "response_km_para": {
+      "dtype": "string"
+    },
+    "reasoning_summary_km": {
+      "dtype": "string"
+    },
+    "tags": {
+      "dtype": "list",
+      "feature": {
+        "dtype": "string"
+      }
+    }
+  },
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_examples": 18756
+    }
+  }
+}

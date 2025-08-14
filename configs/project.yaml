@@ -1,0 +1,27 @@
+name: medical-km-nano-v2
+source:
+  hf_id: FreedomIntelligence/medical-o1-reasoning-SFT
+  hf_config: en
+  hf_split: train
+fields:
+  question: Question
+  response: Response
+coverage:
+  paraphrase_rate: 0.5    # 50% of rows
+  summary_rate: 1.0       # 100% of rows
+budget:
+  max_usd: 30.0           # full EN split cap
+  batch: true
+translation:
+  max_output_tokens: 8000  # Very high limit: GPT-5-mini needs ~4000-5000 for reasoning + 2000-3000 for output
+  temperature: 1.0
+outputs:
+  translate_jsonl: data/out/km_translations.jsonl
+  merged_jsonl:    data/out/km_merged.jsonl
+  paraphrase_jsonl: data/out/km_paraphrases.jsonl
+  summary_jsonl:   data/out/km_summaries.jsonl
+  final_jsonl:     data/out/km_final.jsonl
+  hf_root:         data/hf
+qa:
+  sample_rate: 0.03
+  fail_on_major: true
